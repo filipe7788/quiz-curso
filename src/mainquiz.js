@@ -91,8 +91,7 @@ class MainQuiz extends React.Component {
       return (
         <div className="App">
           <h1>{this.state.questions} </h1>
-          <span>{`Questão ${currentQuestion} de ${quizData.length -
-            1}`}</span>
+          <span>{`Questão ${currentQuestion+1} de ${quizData.length}`}</span>
           {options.map(option => (
             <p
               key={option.id}
